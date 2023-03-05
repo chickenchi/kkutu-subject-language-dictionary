@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+.Head {
+  display: inline;
+}
+
+.Head > .BG {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Head > .BG > .Title {
+  background-color: rgba(100, 100, 100, 0.6);
+  display: flex;
+  width: 20%;
+  margin: 30px;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0px 2px 1px 1px rgba(69, 93, 74, 0.342);
+  align-items: center;
+  justify-content: center;
+}
+
+.Head > .BG > .Title > h1 {
+  margin: 0 10px 0px 0px;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 30pt;
+  display: inline;
+  text-align: left;
+  line-height: 120px;
+}
+
+.Head > .BG > .Sentence {
+  background-color: rgba(100, 100, 100, 0.6);
+  display: flex;
+  width: 35%;
+  height: 100%;
+  margin: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 1px 1px rgba(69, 93, 74, 0.342);
+  align-items: center;
+  justify-content: center;
+}
+
+.Head > .BG > .Sentence > .Selection {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  margin: 20px;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 30px;
+  color: RGB(255, 255, 255);
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Bar {
+  position: absolute;
+  top: 15px;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 255);
+}
+
+.S1:hover {
+  animation-name: lg;
+  animation-duration: 1s;
+}
+
+.S2:hover {
+  animation-name: lg2;
+  animation-duration: 1s;
+}
+
+.S3:hover {
+  animation-name: lg3;
+  animation-duration: 1s;
+}
+
+@keyframes lg {
+  from {
+      color: white;
+  }
+  to {
+      color: rgb(181, 255, 254);
+  }
+}
+
+@keyframes lg2 {
+  from {
+      color: white;
+  }
+  to {
+      color: rgb(186, 181, 255);
+  }
+}
+
+@keyframes lg3 {
+  from {
+      color: white;
+  }
+  to {
+      color: rgb(255, 181, 220);
+  }
+}
