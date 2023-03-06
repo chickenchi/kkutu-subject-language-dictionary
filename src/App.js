@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import Head from './components/Head';
 import Sect from './components/Sect';
 
@@ -7,8 +7,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <Head></Head>
-          <Sect></Sect>
+        <Head />
+        <Sect />
       </div>
     );
   }

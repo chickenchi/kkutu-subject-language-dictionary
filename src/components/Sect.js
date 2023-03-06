@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import './styles/Sect.css';
+import './styles/Sect.scss';
 import Hello from './Hello';
+import All from './All';
+import Sentence from './Sentence';
+import Mission from './Mission';
 
-import { AiFillHdd } from "react-icons/ai";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 class Sect extends Component {
   render() {
@@ -10,7 +13,12 @@ class Sect extends Component {
       <div className="Sect">
         <div className="BG">
           <div className="Title">
-            <Hello />
+            <Routes>
+              <Route path="/" element={<Hello />} />
+              <Route path="/All" element={<All />} />
+              <Route path="/Sentence" element={<Sentence />} />
+              <Route path="/Mission" element={<Mission />} />
+            </Routes>
           </div>
         </div>
       </div>

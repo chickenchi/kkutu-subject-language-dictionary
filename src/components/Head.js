@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import './styles/Head.css';
+import './styles/Head.scss';
 
 import { AiFillHdd } from "react-icons/ai";
+
+import { Link } from 'react-router-dom';
 
 class Head extends Component {
   render() {
@@ -9,29 +11,28 @@ class Head extends Component {
       <div className="Head">
         <div className="BG">
           <div className="Title">
-              <h1>언어 사전 l</h1>
+              <Link to=""><h1>언어 사전 l</h1></Link>
               <AiFillHdd size="30" />
           </div>
-
           <div className="Sentence">
               <div className="Selection">
                 <p className="Bar">─</p>
                 <div className="S1">
-                  <p>종합 검색</p>
+                  <Link to="All"><p>종합 검색</p></Link>
                 </div>
               </div>
               
               <div className="Selection">
                 <p className="Bar">─</p>
                 <div className="S2">
-                  <p>미션 단어</p>
+                <Link to="Mission"><p>미션 단어</p></Link>
                 </div>
               </div>
 
               <div className="Selection">
                 <p className="Bar">─</p>
                 <div className="S3">
-                  <p>장문 모음</p>
+                <Link to="Sentence"><p>장문 모음</p></Link>
                 </div>
               </div>
           </div>

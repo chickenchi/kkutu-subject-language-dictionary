@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+@mixin center-setting-only {
+  display: flex;
+  justify-content: center;
+}
+
+.Hello {
+
+  h2 {
+    @include center-setting-only;
+    
+    margin: 40px 0 0 10px;
+    
+    font-size: 35pt;
+    text-align: center;
+
+    span {
+      margin: 0 0 0 10px;
+    }
+  }
+
+  p {
+    line-height: 110px;
+    
+    font-size: 25pt;
+    color: white;
+    text-align: center;
+  }
+
+}
+
+.none {
+  color: white;
+}
+
+.kc {
+  color: rgb(239, 155, 152);
+}
+
+.kr {
+  color: rgb(80, 248, 167);
+}
+
+span {
+  color: rgb(80, 234, 248);
+}

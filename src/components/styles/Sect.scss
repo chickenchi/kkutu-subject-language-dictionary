@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import "Head.scss";
+
+  .Sect {
+    display: inline;
+
+    .BG {
+      @include center-setting;
+
+      height: 700px;
+      margin: 20px;
+
+      .Title {
+        background-color: rgba(70, 70, 70, 0.8);
+        
+        @include center-setting;
+        
+        width: 65%;
+        height: 100%;
+        margin: 30px;
+        
+        border-radius: 15px;
+        box-shadow: 0px 2px 1px 1px rgba(69, 93, 74, 0.342);
+        
+        font-family: "Do Hyeon", sans-serif;
+      }
+    } 
+  }
