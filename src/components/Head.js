@@ -5,6 +5,12 @@ import { AiFillHdd } from "react-icons/ai";
 
 import { Link } from 'react-router-dom';
 
+import styled from 'styled-components'; // 내가 태그를 만들음
+
+// const Container = styled.div`
+//  text-align: center;
+//`
+
 class Head extends Component {
   render() {
     return (

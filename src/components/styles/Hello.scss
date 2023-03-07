@@ -11,8 +11,11 @@
     @include center-setting-only;
     
     margin: 40px 0 0 10px;
-    
+
     font-size: 35pt;
+    @media (max-width: 1200px) {
+      font-size: 30pt;
+    }
     text-align: center;
 
     span {
@@ -24,6 +27,9 @@
     line-height: 110px;
     
     font-size: 25pt;
+    @media (max-width: 1200px) {
+      font-size: 19pt;
+    }
     color: white;
     text-align: center;
   }
